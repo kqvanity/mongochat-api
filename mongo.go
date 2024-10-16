@@ -250,12 +250,8 @@ func (s *RestStreamCallback) OnReferences(r ReferencesMsg) {
 	s.f.Flush()
 }
 
-// FIXME: ai doesn't parse the output quite nicely with escape chars and whatnot
 func escapeJSON(s string) string {
-	//if !strings.Contains(s, " ") {
-	//	//fmt.Println("contains", s)
-	//	return s
-	//}
+	s = strings.ReplaceAll(s, "\\n", "\n")
 	b, _ := json.Marshal(s)
 	return string(b[1 : len(b)-1])
 }
@@ -305,6 +301,7 @@ func MongoRestClient() {
 		log.Fatal(err)
 	}
 }
+
 func cHandler(c *gin.Context) {
 	var req OpenaiRequest
 	flusher, ok := c.Writer.(http.Flusher)
