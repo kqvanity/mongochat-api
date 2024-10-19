@@ -1,2 +1,4 @@
 .idea
 go.sum
+.aider*
+notes.txt
