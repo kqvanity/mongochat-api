@@ -1,6 +1,6 @@
 # MongoDB Chatbot API Wrapper
 
-This Go code provides a wrapper around the MongoDB Knowledge API to facilitate chatbot interactions. It includes functionalities to create conversation sessions, send messages, and handle streaming responses. The code is designed to be used both as a command-line tool and as a REST API compatible with OpenAI's `/chat/completions` endpoint.
+This Go code provides a wrapper around the MongoDB Knowledge API to facilitate chatbot interactions. It includes functionalities to create conversation sessions, send messages, and handle streaming responses. The project is designed to be used both as a command line tool and as a REST API compatible with OpenAI's `/chat/completions` endpoint.
 
 ## Features
 
@@ -71,7 +71,7 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ## License
 
-This project is licensed under [MIT] - see the `LICENSE` file for details.
+This project is licensed under [MIT](./LICENSE) - see the `LICENSE` file for details.
 
 ---
 
